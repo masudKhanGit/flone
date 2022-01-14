@@ -1,0 +1,244 @@
+
+
+// Navbar Starts
+.custom__navbar {
+    background-color: #fff;
+    padding: 5px 0;
+}
+.flex__item {
+    display: flex;
+    align-items: center;
+}
+// Navbar Ends
+
+// Carousel starts
+.main__carousel {
+    background-color: #F0E0FF;
+    padding: 1rem;
+}
+
+.carousel {
+    margin-top: 0px;
+
+    .bg-color {
+        background-color: #F0E0FF;
+    }
+    
+    &__info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        h4 {
+            color: #313131;
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 24px;
+        }
+        h2 {
+            font-size: 72px;
+            line-height: 80px;
+            font-weight: 400;
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .btn__home {
+        padding: 20px 50px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: #313131;
+        font-size: 16px;
+        color: #fff;
+        border: 1px solid #000;
+        transition: all .3s ease;
+
+        &:hover {
+            background-color: #a749ff;
+            color: #fff;
+        }
+    }
+
+}
+
+// Carousel ends
+
+// Supports Starts
+
+.support__wrap__home {
+    padding: 20px 10px 30px;
+    margin: 60px 0;
+    
+    .support__wrap__content__home {
+        display: flex;
+        align-items: center;
+        
+        img {
+            margin-right: 25px;
+            width: 50px;
+        }
+
+        .support__wrap__info {
+            h4{
+                font-size: 18px;
+                color: #000;
+                margin: 15px 0;
+                line-height: 10px;
+            }
+
+            p {
+                color: #666;
+            }
+        }
+    }
+
+    &__animated {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes icon__animation {
+        0% {
+            transform: scaleX(1);
+        }
+        10%, 20% {
+            transform: scale3d(.9,.9,.9) rotate(-3deg);
+        }
+        30%, 50%, 70%, 90% {
+            transform: scale3d(1.1, 1.1, 1.1) rotate(3deg);
+        }
+        40%, 60%, 80% {
+            transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg);
+        }
+        100% {
+            transform: scaleX(1);
+        }
+    }
+
+    &:hover .support__wrap__animated {
+        animation: icon__animation 0.5s ease-in-out 0s 1 normal none running;
+    }
+
+
+}
+
+// Supports Ends
+
+// Our Blogs starts
+
+.section__title__blog {
+    margin-top: 50px;
+    h2 {
+        font-size: 30px;
+        font-weight: 600;
+        display: inline-block;
+        margin: 0;
+        line-height: 36px;
+        position: relative;
+        text-transform: uppercase;
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            top: 17px;
+            width: 80px;
+            height: 2px;
+            background-color: #000;
+        }
+
+        &::before {
+            left: -100px;
+        }
+        &::after {
+            right: -100px;
+        }
+    }
+}
+
+// card design starts
+
+.blog {
+    position: relative;
+    margin-top: 60px;
+    overflow: hidden;
+    transition: all .3s ease;
+
+    img {
+        width: 100%;
+        height: 100%;
+        transition: all .3s ease;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &__bages {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+
+        &__one {
+            position: absolute;
+            background-color: #a749ff;
+            padding: .15rem;
+            font-size: 14px;
+            color: #fff;
+            top: 15px;
+            left: 10px;
+        }
+        &__two {
+            position: absolute;
+            background-color: #a749ff;
+            padding: .15rem;
+            font-size: 14px;
+            color: #fff;
+            top: 15px;
+            left: 80px;
+        }
+        
+    }
+
+    &__content {
+        position: absolute;
+        width: 80%;
+        background-color: #fff;
+        z-index: 233;
+        bottom: -20px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        padding: 1rem;
+        text-align: center;
+        border-radius: .25rem;
+
+        h3 {
+            font-size: 20px;
+            line-height: 40px;
+            a {
+                text-decoration: none;
+                color: #313131;
+                transition: all .3s ease;
+                &:hover {
+                    color: #a749ff;
+                    text-decoration: underline;
+                }
+            }
+
+            span {
+                font-size: 14px;
+             
+            }
+        }
+
+    }
+
+
+}
+
+// card design ends
+
+// Our Blogs ends

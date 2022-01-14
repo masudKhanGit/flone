@@ -1,0 +1,49 @@
+// Override bootstrap sass file
+$font-family-sans-serif: 'Poppins', sans-serif;
+
+
+// Bootstrap main sass file import
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Google fonts import
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
+
+// Fontawsome sass import file
+@import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/v4-shims.scss";
+
+
+
+// Our custom code here....
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F6F6F6;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+}
+
+// Home Page Starts
+@import "./home";
+// Home Page ends
+
+// Home Fusion Two Starts
+@import "./homeFusionTwo";
+// Home Fusion Two Ends
+
+// Home Plants Starts
+@import "./plants";
+// Home Plants ends
+
+// Collection Starts
+@import "./collection";
+// Collection Ends

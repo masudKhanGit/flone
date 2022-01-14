@@ -1,0 +1,358 @@
+
+main {
+    background-color: #fff;
+}
+
+.container__homeFusionTwo {
+    width: 1800px;
+    margin: 0 auto;
+
+    .main__homeFusionTwo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+.middle {
+    margin-top: 50px;
+}
+
+// Home Fusion Two Carousel Starts
+
+.bg__color__homeFusionTwo {
+    background-color: #f6f6f6 !important;
+}
+
+.home__slider {
+    background-color: #f6f6f6 !important;
+    margin-top: -48px;
+}
+
+.carousel__info__homeFusionTwo {
+    padding: 1rem;
+}
+
+.line {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';
+        width: 150px;
+        height: 2px;
+        top: 12px;
+        left: 180px;
+        background-color: #000;
+    }
+}
+
+// Home Fusion Two Carousel Ends
+
+// Featured banner Card Starts
+
+.homeFusionTwo__banner {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+    transition: all .3s ease;
+
+    img {
+        width: 100%;
+        height: 100%;
+        transition: all .3s ease;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &__content {
+        position: absolute;
+        top: 0;
+        padding: 2rem;
+        font-family: 'Cormorant Garamond', serif;
+
+        h3 {
+            font-size: 36px;
+            font-weight: 600;
+            color: #915342;
+        }
+        h4 {
+            font-size: 20px;
+            font-weight: 600;
+
+            span {
+                
+                color: #915342;
+            }
+        }
+        a {
+            margin-top: 55px;
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            color:#915342;
+            text-align: center;
+            border-radius: 100%;
+            border: 2px solid #915342;
+            border-radius: 100%;
+            line-height: 25px;
+            color: #915342;
+            transition: all .3s ease;
+
+            &:hover, i:hover {
+                color: #6f42c1;
+                border: 2px solid #6f42c1;
+            }
+        }
+    }
+
+}
+
+// Featured banner Card Ends
+
+
+
+// Deaily Deals Product Tab list starts
+
+.product__tab__list__custom {
+    justify-content: start;
+    padding-top: 30px;
+    padding-bottom: 55px;
+
+    .nav-link {
+        background-color: transparent !important;
+        margin: 0 12px;
+        display: inline-block;
+        padding: 8px 16px;
+    }
+
+    a.active h4,a h4:hover {
+        color: #000;
+    }
+
+    a h4 {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+        transition: all 0.3s ease 0s;
+        color:#555;
+        line-height: 24px;
+
+    }
+
+}
+
+// Deaily Deals Product Tab list ends
+
+// Deaily Deals Product Tab list Cart starts
+
+.product__container {
+    position: relative;
+    margin-bottom: 70px;
+
+    a {
+        line-height: inherit;
+        cursor: pointer;
+        text-decoration: none;
+        color: #000;
+    }
+
+    &__img {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+
+        & .image__hover{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            visibility: hidden;
+            opacity: 0;
+            transition: all .7s ease;
+            transform: translate(50%, 0px);
+        }
+
+        & .default__image {
+            position: relative;
+            top: 0;
+            left: 0;
+            transition: all .7s ease;
+            transform: translate(0, 0px);
+        }
+    }
+
+    &__bages {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        display: flex;
+        flex-direction: column;
+
+        .pink {
+            color: #fa6bff;
+            margin-bottom: 10px;
+        }
+        .purple {
+            color: #a749ff;
+        }
+    }
+
+    &__action {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(40%, -50%);
+
+        .product__container__same {
+            font-size: 16px;
+            line-height: 48px;
+            display: inline-block;
+            margin-right: 5px;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background-color: #a749ff !important;
+            color: #fff;
+            text-align: center;
+            text-transform: capitalize;
+            border: none;
+            background: none;
+            transition: all .3s ease;
+            visibility: hidden;
+            transform: rotateX(260deg);
+            opacity: 0;
+
+            &:hover {
+                background-color: #fa6bff !important;
+                color: #fff;
+            }
+        }
+    }
+
+    &__content {
+        margin-top: 10px;
+
+        a {
+            font-size: 16px;
+            line-height: 36px;
+            transition: all .3s ease;
+
+            &:hover {
+                color: #a749ff;
+            }
+        }
+
+        .product__container__price span {
+            font-size: 15px;
+            font-weight: 400;
+            position: relative;
+            color: #313131;
+            margin-right: 15px;
+
+            &::after {
+                position: absolute;
+                content: '';
+                top: 10px;
+                right: -13px;
+                width: 7px;
+                height: 2px;
+                background-color: #999;
+            }
+            &.old__two {
+                text-decoration: line-through;
+                color: #fa6bff;
+                &::after {
+                    content: '';
+                    display: none;
+                }
+            }
+        }
+
+        .love__cart {
+          
+                font-size: 16px;
+                display: block;
+                margin: 4px 0 0 10px;
+                color: #929292;
+                border: none;
+                background: none;
+                margin-top: -50px;
+                margin-left: 280px;
+            
+                &:hover {
+                    color: #6f42c1;
+                }
+
+        }
+
+    }
+
+
+    &:hover .image__hover {
+        visibility: visible;
+        opacity: 1;
+        transform: translate(-50%, 0px);
+    }
+
+    &:hover .default__image {
+        transition: all .7s ease;
+        transform: translate(-100%, 0px);
+    }
+
+    &:hover .product__container__same {
+        visibility: visible;
+        transform: rotateX(0);
+        opacity: 1;
+        }
+
+}
+
+// Deaily Deals Product Tab list Cart ends
+
+
+// View More Products Starts
+
+.view__more {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+
+    a {
+        text-decoration: none;
+        font-size: 16px;
+        text-transform: uppercase;
+        position: relative;
+        color: #595959;
+        transition: all .3s ease;
+
+        &:hover {
+            color: #6f42c1;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: -10px;
+            width: 200px;
+            height: 2px;
+            background-color: #595959;
+            opacity: .5;
+            transition: all .3s ease;
+        }
+
+        &:hover::after {
+            background-color: #6f42c1;
+            opacity: 1;
+        }
+    }
+}
+
+// View More Products Ends
